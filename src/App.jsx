@@ -1,13 +1,14 @@
+import Navigation from "./components/Fragments/Navigation"
+import ProductPage from "./pages/product"
 
 
 function App() {
 
   return (
-    <>
-      <p className="font-bold ">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <main>
+      <Navigation/>
+      <ProductPage/>
+    </main>
   )
 }
 
