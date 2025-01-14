@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux"
 import { handleNavCart } from "../../redux/slices/navSlice"
+import { handleSidebar } from "../../redux/slices/sidebarSlice"
 
 const Navigation = () => {
     const dispatch = useDispatch()
@@ -7,7 +8,7 @@ const Navigation = () => {
     return (
         <nav className="flex justify-between items-center p-5">
             <div className="flex items-center justify-center gap-4">
-                <img src="/images/icon-menu.svg" alt="icon-menu" className="cursor-pointer"/>
+                <img src="/images/icon-menu.svg" alt="icon-menu" className="cursor-pointer" onClick={() => dispatch(handleSidebar())}/>
                 <img src="/images/logo.svg" alt="icon-logo" className="cursor-pointer"/>
             </div>
 
