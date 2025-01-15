@@ -5,7 +5,7 @@ import ProductPage from "./pages/product"
 
 function App() {
   const sidebar = useSelector(state => state.sidebar)
-  const fixed = sidebar ? 'fixed' : 'static'
+  const fixed = sidebar ? 'fixed' : 'static md:px-20 '
   const style = `${fixed}`
 
   return (

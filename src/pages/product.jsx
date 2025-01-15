@@ -14,7 +14,7 @@ const data = {
 const ProductPage = () => {
 
     return (
-        <div className="">
+        <div className="md:flex items-center justify-center gap-10 md:px-10">
             <ProductImagesLayout/>
             <ProductDetail data={data}/>
             <CartLayout/>
