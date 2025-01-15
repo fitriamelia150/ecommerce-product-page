@@ -31,7 +31,7 @@ const ProductImagesLayout = () => {
                 </div>
             </div>
 
-            <div className="hidden md:flex flex-col w-[175.6%]">
+            <div className="hidden md:flex flex-col">
                 <img src={images[indexImages]} alt="image-product" className="rounded-lg"/>
                 <div className="flex gap-5 mt-5 justify-between">
                     {imagesThumb.map((item, index) => (
